@@ -107,7 +107,7 @@ begin
    BUTTONCOLORDISABLE := MEDIUMGRAY;
 end;
 
-
+//
 Procedure Principal_Light;
 begin
    BACKGROUNDTOP := $00898989;   // Gray
