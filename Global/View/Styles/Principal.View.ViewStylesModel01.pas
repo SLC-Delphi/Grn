@@ -1,0 +1,123 @@
+unit Principal.View.ViewStylesModel01;
+
+interface
+
+Uses System.UITypes;
+
+Const
+   SUCCESS = $0045a728;
+   DANGER = $004535dc;
+   WARNING = $0007c1ff;
+   INFO = $00b8a217;
+
+   LIGHT = $00faf9f8;
+   LIGHTSILVER = $00d9d7d5;
+   SILVER = $00c4c2c0;
+   MEDIUMGRAY = $00a0a0a0;
+   GRAY = $00808080;
+   DARKGRAY= $00565350;
+   DARK = $00403a34;
+   BLACK = $000010101;
+   MUTED = $00c6c3bf;
+   WHITE = $00ffFFff;
+
+   LIGHTRED = $007268fa;
+   RED = $003525cc;
+   DARKRED = $000f009a;
+
+   LIGHTGREEN = $0045a728;
+   GREEN = $00359718;
+   MEDIUMGREEN =  $00166000;
+   DARKGREEN = $00135300;
+
+   LIGHTTEAL = $00969600;
+   TEAL = $00808000;
+   MEDIUMTEAL = $00646400;
+   DARKTEAL = $00565600;
+
+   LIGHTPACIFICBLUE = $00e0c880; //$006acdea
+   PACIFICBLUE = $00c49d00;
+   MEDIUMDARKPACIFICBLUE = $00A68100;
+   DARKPACIFICBLUE = $00916f00;
+
+   LIGHTBLUE = $00ff9b4b;
+   BLUEREAL = $00df5b00;
+   DARKBLUE = $008f1b00;
+   LIGHTVIOLET = $00c9688f;
+   VIOLET = $00b35279;
+   DARKVIOLET = $00832249;
+
+Procedure Principal_Dark;
+Procedure Principal_White;
+Procedure Principal_Light;
+Procedure Dark_PacificBlue;
+Procedure White_PacificBlue;
+Procedure Light_PacificBlue;
+Procedure Dark_Teal;
+Procedure White_Teal;
+Procedure Light_Teal;
+Procedure Dark_Green;
+Procedure White_Green;
+Procedure Light_Green;
+
+var
+//   PRIMARY : TAlphaColor = $00ff7b00;
+//   SECONDARY : TAlphaColor = $007d756c;
+//   BACKGROUNDTOP : TAlphaColor = $00ff9b20;
+//   BACKGROUND : TAlphaColor = $00ff9b4b;
+   BACKGROUNDTOP : TAlphaColor = MEDIUMDARKPACIFICBLUE;
+   BACKGROUND : TAlphaColor = DARKGRAY;
+   EDITDATA : TAlphaColor = DARK;
+   GRIDTITLE : TAlphaColor = DARKPACIFICBLUE;
+   FONTCOLOR : TColor = Light;
+   FONTCOLORDESTAQUE : TColor = WHITE;
+   FONTCOLORDISABLE : TColor = PACIFICBLUE;
+   BUTTONCOLOR : TColor = DARKBLUE;
+   BUTTONCOLORDISABLE : TColor = MEDIUMGRAY;
+
+
+
+implementation
+
+
+Procedure Principal_Dark;
+begin
+   BACKGROUNDTOP := Black;
+   BACKGROUND := DARKGRAY;
+   EDITDATA := DARKGRAY;
+   GRIDTITLE := DARK;
+   FONTCOLOR := White;
+   FONTCOLORDESTAQUE := Silver;
+   FONTCOLORDISABLE := GRAY;
+   BUTTONCOLOR := DARK;
+   BUTTONCOLORDISABLE := MEDIUMGRAY;
+end;
+
+
+Procedure Principal_White;
+begin
+   BACKGROUNDTOP := MEDIUMGRAY;
+   BACKGROUND := LIGHT;
+   EDITDATA := LIGHT;
+   GRIDTITLE := LIGHTSILVER;
+   FONTCOLOR := BLACK;
+   FONTCOLORDESTAQUE := DARK;
+   FONTCOLORDISABLE := GRAY;
+   BUTTONCOLOR := SILVER;;
+   BUTTONCOLORDISABLE := MEDIUMGRAY;
+end;
+
+
+Procedure Principal_Light;
+begin
+   BACKGROUNDTOP := $00898989;   // Gray
+   BACKGROUND := LIGHTSILVER;
+   EDITDATA := LIGHTSILVER;
+   GRIDTITLE := MEDIUMGRAY;
+   FONTCOLOR := BLACK;
+   FONTCOLORDESTAQUE := DARK;
+   FONTCOLORDISABLE := GRAY;
+   BUTTONCOLOR := LIGHTSILVER;;
+   BUTTONCOLORDISABLE := MEDIUMGRAY;
+end;
+
